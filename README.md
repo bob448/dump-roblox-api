@@ -40,8 +40,7 @@ type DumpedClass = {
 # Example output:
 (truncated to keep short)
 ```lua
-Class Names:
-{
+local ClassNames = {
 	"Instance",
 	"Accoutrement",
 	"Accessory",
@@ -56,8 +55,7 @@ Class Names:
 	"Wire"
 }
 
-Classes:
-{
+local Classes = {
 	["Instance"] = {
 		["Members"] = {
 			{
@@ -207,8 +205,7 @@ Classes:
 	}
 }
 
-Enums:
-{
+local Enums = {
 	["AccessModifierType"] = {
 		[0] = "Allow",
 		[1] = "Deny"
