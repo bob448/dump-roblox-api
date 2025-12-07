@@ -1,5 +1,5 @@
 # Dump-Roblox-Api
----
+
 Dumps all roblox classes and enums into either a luau table or Rust structs and values.
 
 For luau enums, you might want to try `SomeEnum:GetEnumItems()` for EnumItems or `Enum:GetEnums()` for all enums
