@@ -3,6 +3,7 @@ use serde::Deserialize;
 use class::Class;
 use enums::Enum;
 
+/// Tries to get an `ApiDump` for `studio_version`
 pub async fn try_dump(studio_version: String) -> Result<ApiDump, reqwest::Error> {
     let url = API_DUMP_URL.replace("{v}", &studio_version);
 
@@ -10,15 +11,21 @@ pub async fn try_dump(studio_version: String) -> Result<ApiDump, reqwest::Error>
     response.json().await
 }
 
+/// Returned by `try_dump()`
 #[allow(non_snake_case)]
 #[derive(Deserialize, Debug, Clone)]
 pub struct ApiDump {
+    /// All dumped classes
     pub Classes: Vec<Class>,
+    /// All dumped enums
     pub Enums: Vec<Enum>,
     pub Version: u32,
 }
 
 impl ApiDump {
+    /// Returns a luau table with all
+    /// of the class names contained
+    /// within `self.Classes`
     pub fn class_names_into_luau_table(
         &self,
         hide_non_creatable: bool,
@@ -53,6 +60,9 @@ impl ApiDump {
 
         buf
     }
+    /// Returns a luau table with all
+    /// the classes (most of its data)
+    /// contained within `self.Classes`
     pub fn classes_into_luau_table(
         &self,
         hide_non_creatable: bool,
@@ -142,6 +152,8 @@ impl ApiDump {
 
         buf
     }
+    /// Returns all dumped enums as a luau table
+    /// contained within `self.Enums`
     pub fn enums_into_luau_table(&self) -> String {
         let mut buf = "{\n".to_string();
 
