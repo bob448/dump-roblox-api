@@ -7,6 +7,13 @@ in luau itself.
 
 The most helpful results returned by this script is `Class Names` and dumped `Classes`.
 
+# Before compiling:
+Make sure you have rust installed. That's all you need.
+
+# Compile:
+To compile, download the repository and run `cargo build -r` in the root of the repository.
+The executable will be in `target/release`.
+
 # Save to file:
 - Linux and Windows:
 `dump-roblox-api --some-options -abc > output.txt`
