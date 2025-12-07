@@ -86,14 +86,14 @@ async fn start_dumping(
         info!("printing out dump as luau table\n");
 
         println!(
-            "Class Names:\n{}\n",
+            "local ClassNames = {}\n",
             dump.class_names_into_luau_table(hide_non_creatable, hide_non_browseable)
         );
         println!(
-            "Classes:\n{}\n",
+            "local Classes = {}\n",
             dump.classes_into_luau_table(hide_non_creatable, hide_non_browseable)
         );
-        println!("Enums:\n{}", dump.enums_into_luau_table());
+        println!("local Enums = {}", dump.enums_into_luau_table());
     } else {
         dbg!(dump);
     }
