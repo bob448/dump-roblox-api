@@ -1,7 +1,12 @@
 [package]
 name = "dump-roblox-api"
-version = "0.1.0"
+version = "1.0.0"
 edition = "2024"
+homepage = "https://github.com/bob448/dump-roblox-api/"
+authors = ["@bob448 on github"]
+categories = ["Utility", "Roblox"]
+readme = "README.md"
+description = "Dumps all roblox classes and enums into either a luau table or Rust structs and values."
 
 [dependencies]
 clap = "4.5.53"
