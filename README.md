@@ -5,7 +5,7 @@ Dumps all roblox classes and enums into either a luau table or Rust structs and 
 For luau enums, you might want to try `SomeEnum:GetEnumItems()` for EnumItems or `Enum:GetEnums()` for all enums
 in luau itself.
 
-The most helpful results returned by this script is `Class Names` and dumped `Classes`.
+The most helpful results returned by this script is `ClassNames` and dumped `Classes`.
 
 # Before compiling:
 Make sure you have rust installed. That's all you need.
