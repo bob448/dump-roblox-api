@@ -7,15 +7,26 @@ in luau itself.
 
 The most helpful results returned by this script is `ClassNames` and dumped `Classes`.
 
+# Install from crates.io:
+This is the recommended method.
+Make sure you have rust installed.
+Run the command below to install it from crates.io:
+```
+cargo install dump-roblox-api
+```
+
+# Using as a library:
+You can use it as a library by adding it to your rust project by running:
+```
+cargo add dump-roblox-api
+```
+
 # Before compiling:
 Make sure you have rust installed. That's all you need.
 
 # Compile:
-To compile, download the repository and run `cargo build -r` in the root of the repository.
+If you want to compile it yourself, download the repository and run `cargo build -r` in the root of the repository.
 The executable will be in `target/release`.
-
-# Using as a library:
-You can use it as a library by adding it to your rust project through [crates.io](https://crates.io/crates/dump-roblox-api).
 
 # Save to file:
 - Linux and Windows:
