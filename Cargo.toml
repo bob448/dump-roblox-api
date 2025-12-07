@@ -7,6 +7,7 @@ authors = ["@bob448 on github"]
 categories = ["Utility", "Roblox"]
 readme = "README.md"
 description = "Dumps all roblox classes and enums into either a luau table or Rust structs and values."
+license = "MIT"
 
 [dependencies]
 clap = "4.5.53"
