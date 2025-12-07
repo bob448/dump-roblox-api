@@ -19,7 +19,7 @@ The executable will be in `target/release`.
 `dump-roblox-api --some-options -abc > output.txt`
 # Luau type definitions:
 
-```
+```lua
 type DumpedMember = {
     ["Category"]: string,
     ["MemberType"]: string,
@@ -39,7 +39,7 @@ type DumpedClass = {
 
 # Example output:
 (truncated to keep short)
-```
+```lua
 Class Names:
 {
 	"Instance",
