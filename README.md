@@ -39,6 +39,7 @@ type DumpedClass = {
 
 # Example output:
 (truncated to keep short)
+(this is **not** actual output, do not use this in luau code)
 ```lua
 local ClassNames = {
 	"Instance",
