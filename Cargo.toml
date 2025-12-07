@@ -1,6 +1,6 @@
 [package]
 name = "dump-roblox-api"
-version = "1.0.1"
+version = "1.0.2"
 edition = "2024"
 homepage = "https://github.com/bob448/dump-roblox-api/"
 authors = ["@bob448 on github"]
