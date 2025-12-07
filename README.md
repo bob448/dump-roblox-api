@@ -14,6 +14,9 @@ Make sure you have rust installed. That's all you need.
 To compile, download the repository and run `cargo build -r` in the root of the repository.
 The executable will be in `target/release`.
 
+# Using as a library:
+You can use it as a library by adding it to your rust project through [Placeholder](crates.io).
+
 # Save to file:
 - Linux and Windows:
 `dump-roblox-api --some-options -abc > output.txt`
