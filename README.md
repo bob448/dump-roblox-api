@@ -8,7 +8,6 @@ in luau itself.
 The most helpful results returned by this script is `ClassNames` and dumped `Classes`.
 
 # Install from crates.io:
-This is the recommended method.
 Make sure you have rust installed.
 Run the command below to install it from crates.io:
 ```
